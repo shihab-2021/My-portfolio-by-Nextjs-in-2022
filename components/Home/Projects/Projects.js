@@ -11,7 +11,7 @@ import { BiLinkExternal } from "react-icons/bi";
 
 const Projects = () => {
   return (
-    <div>
+    <div id="projects">
       <div className="container">
         <h1 className="stroke-text text-center">
           {"<"} Projects {"/>"}
@@ -146,6 +146,7 @@ const Projects = () => {
                 </div>
               </div>
             </section>
+            <div className={`${styles.projects_blur} blur`}></div>
           </div>
         </div>
       </div>

@@ -9,7 +9,9 @@ const Header = () => {
     head_container = document.querySelector(".head_container");
   }, []);
   return (
-    <div>
+    <div id="home">
+      <div className="blur hero-blur"></div>
+      <div className="blur hero-blur1"></div>
       <div id="particle-container">
         <div className={styles.particle}></div>
         <div className={styles.particle}></div>
@@ -44,22 +46,44 @@ const Header = () => {
         <div className="links">
           <ul>
             <li>
-              <a>home</a>
+              <a
+                href="#home"
+                onClick={() => head_container.classList.toggle("active")}
+              >
+                home
+              </a>
             </li>
             <li>
-              <a href="#">Services</a>
+              <a
+                href="#about"
+                onClick={() => head_container.classList.toggle("active")}
+              >
+                About
+              </a>
             </li>
             <li>
-              <a href="#">Portfolio</a>
+              <a
+                href="#projects"
+                onClick={() => head_container.classList.toggle("active")}
+              >
+                Projects
+              </a>
             </li>
             <li>
-              <a href="#">Testimonials</a>
+              <a
+                href="#blogs"
+                onClick={() => head_container.classList.toggle("active")}
+              >
+                Blogs
+              </a>
             </li>
             <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
+              <a
+                href="#contact"
+                onClick={() => head_container.classList.toggle("active")}
+              >
+                Contact
+              </a>
             </li>
           </ul>
         </div>

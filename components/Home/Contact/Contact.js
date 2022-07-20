@@ -1,4 +1,7 @@
 import React from "react";
+import { BsTelephone } from "react-icons/bs";
+import { AiOutlineMail } from "react-icons/ai";
+import { HiOutlineLocationMarker } from "react-icons/hi";
 
 const Contact = () => {
   const sendEmail = (e) => {
@@ -29,18 +32,26 @@ const Contact = () => {
     e.target.reset();
   };
   return (
-    <div>
+    <div className="pb-5 mb-5">
       <section className="contact pb-5 mb-5" id="contact">
         <div className="container">
           <div>
-            <h1 style={{ color: "#df4d68" }} className="heading pb-3">
-              <span>Contact</span>
+            <h1
+              // style={{ color: "#df4d68" }}
+              className="heading pb-3 text-center d-flex justify-content-center flex-column align-items-center stroke-text pt-5"
+            >
+              <span className="">CONTACT</span>
               <hr
-                className="m-0 p-0 fw-bold"
-                style={{ width: "50px", height: "3px" }}
+                className="mb-5 p-0 fw-bold"
+                style={{
+                  width: "80px",
+                  height: "3px",
+                  border: "3px solid #00ffe7",
+                  borderRadius: "30%",
+                  marginTop: "-5px",
+                }}
               />
             </h1>
-            <p></p>
           </div>
           <div className="row">
             <div className="col-lg-5">
@@ -52,33 +63,67 @@ const Contact = () => {
                 }}
               >
                 <div className="info">
-                  <div className="address">
-                    <h2>
-                      <i className="fas fa-phone-alt border rounded-circle p-2 outer-shadow"></i>
-                      Location:
-                    </h2>
-                    <p className="ps-5">Bangladesh</p>
+                  <div
+                    className="email d-flex p-3 align-items-center"
+                    style={{
+                      borderRadius: "5px",
+                      boxShadow: "0 .5rem 1rem rgba(0,0,0,0.35)!important",
+                    }}
+                  >
+                    <span
+                      className="p-3 bg-dark d-flex"
+                      style={{ borderRadius: "50%", overflow: "visible" }}
+                    >
+                      <AiOutlineMail />
+                    </span>
+                    <p className="m-0 ps-3">shihab77023@gmail.com</p>
                   </div>
                   <div className="email">
-                    <h2>
-                      <i className="fas fa-mail-bulk border rounded-circle p-2 outer-shadow"></i>{" "}
-                      Email:
-                    </h2>
-                    <p className="ps-5">shihab77023@gmail.com</p>
+                    <p className="ps-5"></p>
                   </div>
-                  <div className="phone">
-                    <h2>
-                      <i className="fas fa-phone-alt border rounded-circle p-2 outer-shadow"></i>{" "}
-                      Phone:
-                    </h2>
-                    <p className="ps-5">01643433981</p>
+                  <div
+                    className="phone d-flex p-3 align-items-center"
+                    style={{
+                      borderRadius: "5px",
+                      boxShadow: "0 .5rem 1rem rgba(0,0,0,0.35)!important",
+                    }}
+                  >
+                    <span
+                      className="p-3 bg-dark d-flex"
+                      style={{ borderRadius: "50%", overflow: "visible" }}
+                    >
+                      <BsTelephone />
+                    </span>
+                    <p className="m-0 ps-3">016434339**</p>
+                  </div>
+                  <div
+                    className="address d-flex p-3 align-items-center mb-3"
+                    style={{
+                      borderRadius: "5px",
+                      boxShadow: "0 .5rem 1rem rgba(0,0,0,0.35)!important",
+                    }}
+                  >
+                    <span
+                      className="p-3 bg-dark d-flex"
+                      style={{ borderRadius: "50%", overflow: "visible" }}
+                    >
+                      <HiOutlineLocationMarker />
+                    </span>
+                    <p className="m-0 ps-3">Chittagong, Bangladesh</p>
                   </div>
                   {/* google map  */}
                   <iframe
                     title="google map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3746840.9140003617!2d88.1008004557478!3d23.49563313534055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adaaed80e18ba7%3A0xf2d28e0c4e1fc6b!2sBangladesh!5e0!3m2!1sen!2sbd!4v1637629669088!5m2!1sen!2sbd"
                     frameBorder="0"
-                    style={{ border: "0", width: "100%", height: "290px" }}
+                    style={{
+                      border: "0",
+                      width: "100%",
+                      height: "290px",
+                      borderRadius: "5px",
+                      boxShadow: "0 .5rem 1rem rgba(0,0,0,0.35)!important",
+                      opacity: "0.8",
+                    }}
                     allowFullScreen
                   ></iframe>
                 </div>
@@ -172,7 +217,10 @@ const Contact = () => {
 
                   <div className="col-12">
                     <button
-                      style={{ borderRadius: "30px" }}
+                      style={{
+                        borderRadius: "30px",
+                        background: "transparent",
+                      }}
                       type="submit"
                       className="outer-shadow hover-in-shadow btn-1 border-0"
                     >

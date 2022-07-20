@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="main-container">
         <div className="main">
           <div className="header">
-            <div className="blur hero-blur"></div>
+            {/* <div className="blur hero-blur"></div> */}
             <div className="hero-container">
               <div className="row-1 full-screen">
                 <div className="home-text">

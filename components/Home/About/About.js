@@ -3,8 +3,8 @@
 import React from "react";
 import styles from "../../../styles/About.module.css";
 import { FaDownload } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-// import { FaFacebook } from "react-icons/fa";
+// import { FaTwitter } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -13,6 +13,7 @@ const About = () => {
   return (
     <div id={styles.about}>
       <section
+        id="about"
         // className="about-section section"
         // className={styles.about_section}
         className={`${styles["about-section "]} ${styles["section"]}`}
@@ -30,22 +31,34 @@ const About = () => {
                 alt=""
               />
               <div className={`${styles["social-links"]}`}>
-                <a className="outer-shadow hover-in-shadow" href="/">
-                  <FaTwitter />
+                <a
+                  className="outer-shadow hover-in-shadow"
+                  href="https://www.facebook.com/shajibulalam.shihab/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <FaFacebook />
                 </a>
                 <a
                   className="outer-shadow hover-in-shadow"
-                  // target="_blank"
+                  rel="noreferrer"
+                  target="_blank"
                   href="https://www.linkedin.com/in/md-shajibul-alam-shihab-b96576216/"
                 >
                   <BsLinkedin />
                 </a>
-                <a className="outer-shadow hover-in-shadow" href="/">
+                <a
+                  className="outer-shadow hover-in-shadow"
+                  href="https://www.instagram.com/shajibul_alam_shihab/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
                   <FaInstagram />
                 </a>
                 <a
                   className="outer-shadow hover-in-shadow"
-                  // target="_blank"
+                  rel="noreferrer"
+                  target="_blank"
                   href="https://github.com/shihab-2021"
                 >
                   <FaGithub />
@@ -82,7 +95,10 @@ const About = () => {
                 >
                   Download Resume <FaDownload />
                 </a>
-                <a href="#" className="btn-1 outer-shadow hover-in-shadow">
+                <a
+                  href="#contact"
+                  className="btn-1 outer-shadow hover-in-shadow"
+                >
                   Hire me
                 </a>
               </div>

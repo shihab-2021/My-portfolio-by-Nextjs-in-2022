@@ -15,6 +15,14 @@
   max-width: var(--width-container);
   width: 100%;
 }
+.projects_blur {
+  background: rgb(43 253 233 / 27%);
+  width: 22rem;
+  height: 40rem;
+  right: 0;
+  /* bottom: 30; */
+  /* right: 0px; */
+}
 
 @media (min-width: 540px) {
   .cards-grid {
@@ -83,4 +91,10 @@
   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
   line-height: 1.4;
   word-spacing: 100vw;
+}
+
+@media only screen and (max-width: 800px) {
+  .projects_blur {
+    width: 12rem;
+  }
 }
